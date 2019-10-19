@@ -16,7 +16,7 @@ def text_preprocess(text_file):
 
     # print(print_charas)
 
-    text_data = unidecode.unidecode(open(text_file).read())
+    text_data = unidecode.unidecode(open(text_file, encoding="ISO-8859-1").read())
 
     # figure our the length of the file
     # this is important as we will be splitting the text file up into random chunks
